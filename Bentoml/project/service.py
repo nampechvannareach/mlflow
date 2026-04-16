@@ -21,3 +21,4 @@ svc = bentoml.Service("phishing_service", runners=[model_runner])
 def predict(input_df: pd.DataFrame) -> pd.DataFrame:
     result = model_runner.predict.run(input_df)
     return pd.DataFrame(result, columns=["prediction"])'''
+    
